@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — STUDIO</title>
+  <meta name="description" content="Our services: Brand Identity, Web Design, Motion Design, and Strategy.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .service {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      padding: var(--space-xl) 0;
+      border-bottom: 1px solid var(--color-bg-alt);
+    }
+    .service:last-of-type {
+      border-bottom: none;
+    }
+    .service__number {
+      font-size: var(--fs-display);
+      font-weight: 300;
+      color: var(--color-bg-alt);
+      line-height: 1;
+      margin-bottom: var(--space-md);
+    }
+    .service__list {
+      margin-top: var(--space-md);
+    }
+    .service__list li {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--color-bg-alt);
+      font-size: var(--fs-small);
+      letter-spacing: 0.02em;
+    }
+    .service__list li:last-child {
+      border-bottom: none;
+    }
+    .service__process {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+    .process-step {
+      padding-left: var(--space-md);
+      border-left: 1px solid var(--color-bg-alt);
+    }
+    .process-step__num {
+      font-size: var(--fs-tiny);
+      font-weight: 700;
+      color: var(--color-secondary);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.25rem;
+    }
+    .service--alt {
+      direction: rtl;
+    }
+    .service--alt > * {
+      direction: ltr;
+    }
+    @media (max-width: 768px) {
+      .service {
+        grid-template-columns: 1fr;
+      }
+      .service--alt {
+        direction: ltr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">STUDIO</a>
+        <div class="nav__links">
+          <a href="work.html" class="nav__link">Work</a>
+          <a href="services.html" class="nav__link active">Services</a>
+          <a href="about.html" class="nav__link">About</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+        </div>
+        <button class="nav__toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile">
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="section" style="padding-top: 10rem;">
+    <div class="container">
+      <p class="label reveal" style="margin-bottom: var(--space-sm);">What We Do</p>
+      <h1 class="heading-1 reveal" style="margin-bottom: var(--space-md);">Services</h1>
+      <p class="text-large text-light reveal" style="max-width: 600px;">
+        We offer a focused set of creative disciplines, each executed with precision and purpose.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+
+      <!-- Brand Identity -->
+      <div class="service reveal">
+        <div>
+          <div class="service__number">01</div>
+          <h2 class="heading-2" style="margin-bottom: var(--space-sm);">Brand Identity</h2>
+          <p class="text-light">We create visual identities that capture the essence of your brand and resonate with your audience. From logo design to comprehensive brand systems.</p>
+          <ul class="service__list">
+            <li>Logo Design & Visual Marks</li>
+            <li>Brand Guidelines</li>
+            <li>Typography & Color Systems</li>
+            <li>Stationery & Collateral</li>
+            <li>Naming & Messaging</li>
+          </ul>
+        </div>
+        <div class="service__process">
+          <p class="label" style="margin-bottom: var(--space-sm);">Process</p>
+          <div class="process-step">
+            <p class="process-step__num">01</p>
+            <h4>Discovery</h4>
+            <p class="text-light">Deep dive into your brand, audience, and market landscape.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__num">02</p>
+            <h4>Concept</h4>
+            <p class="text-light">Exploring visual directions and strategic positioning.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__num">03</p>
+            <h4>Design</h4>
+            <p class="text-light">Crafting the identity system with meticulous attention to detail.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__num">04</p>
+            <h4>Deliver</h4>
+            <p class="text-light">Final assets, guidelines, and support for launch.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Design -->
+      <div class="service service--alt reveal">
+        <div>
+          <div class="service__number">02</div>
+          <h2 class="heading-2" style="margin-bottom: var(--space-sm);">Web Design</h2>
+          <p class="text-light">We design and build websites that are visually stunning, technically excellent, and strategically crafted to achieve your goals.</p>
+          <ul class="service__list">
+            <li>Website Design & Development</li>
+            <li>E-commerce Platforms</li>
+            <li>Content Management Systems</li>
+            <li>Responsive Design</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </div>
+        <div class="service__process">
+          <p class="label" style="margin-bottom: var(--space-sm);">Process</p>
+          <div class="process-step">
+            <p class="process-step__num">01</p>
+            <h4>Strategy</h4>
+            <p class="text-light">Defining goals, user journeys, and technical requirements.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__num">02</p>
+            <h4>Wireframe</h4>
+            <p class="text-light">Structuring content and interactions for clarity.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__num">03</p>
+            <h4>Design & Build</h4>
+            <p class="text-light">Pixel-perfect design brought to life with clean code.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__num">04</p>
+            <h4>Launch</h4>
+            <p class="text-light">Testing, optimization, and a smooth deployment.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Motion Design -->
+      <div class="service reveal">
+        <div>
+          <div class="service__number">03</div>
+          <h2 class="heading-2" style="margin-bottom: var(--space-sm);">Motion Design</h2>
+          <p class="text-light">We bring brands to life through animation and motion. From product launches to social content, we create movement that captivates.</p>
+          <ul class="service__list">
+            <li>Brand Animation</li>
+            <li>Product Videos</li>
+            <li>Social Media Content</li>
+            <li>Title Sequences</li>
+            <li>Kinetic Typography</li>
+          </ul>
+        </div>
+        <div class="service__process">
+          <p class="label" style="margin-bottom: var(--space-sm);">Process</p>
+          <div class="process-step">
+            <p class="process-step__num">01</p>
+            <h4>Brief</h4>
+            <p class="text-light">Understanding the narrative and emotional arc.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__num">02</p>
+            <h4>Storyboard</h4>
+            <p class="text-light">Visual scripting and timing exploration.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__num">03</p>
+            <h4>Animate</h4>
+            <p class="text-light">Bringing frames to life with fluid motion.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__num">04</p>
+            <h4>Refine</h4>
+            <p class="text-light">Polish, sound design, and final delivery.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strategy -->
+      <div class="service service--alt reveal">
+        <div>
+          <div class="service__number">04</div>
+          <h2 class="heading-2" style="margin-bottom: var(--space-sm);">Strategy</h2>
+          <p class="text-light">We help define the strategic foundation that ensures every creative decision is purposeful and aligned with your business objectives.</p>
+          <ul class="service__list">
+            <li>Brand Strategy</li>
+            <li>Market Research</li>
+            <li>Audience Analysis</li>
+            <li>Content Strategy</li>
+            <li>Digital Strategy</li>
+          </ul>
+        </div>
+        <div class="service__process">
+          <p class="label" style="margin-bottom: var(--space-sm);">Process</p>
+          <div class="process-step">
+            <p class="process-step__num">01</p>
+            <h4>Research</h4>
+            <p class="text-light">Market analysis, competitor review, audience insights.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__num">02</p>
+            <h4>Define</h4>
+            <p class="text-light">Positioning, messaging framework, brand pillars.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__num">03</p>
+            <h4>Plan</h4>
+            <p class="text-light">Strategic roadmap and implementation guidelines.</p>
+          </div>
+          <div class="process-step">
+            <p class="process-step__num">04</p>
+            <h4>Measure</h4>
+            <p class="text-light">KPIs, analytics, and continuous optimization.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--alt">
+    <div class="container" style="text-align: center;">
+      <p class="label reveal" style="margin-bottom: var(--space-sm);">Ready to Start?</p>
+      <h2 class="heading-1 reveal" style="margin-bottom: var(--space-md);">Let's work together.</h2>
+      <a href="contact.html" class="btn btn--primary reveal">Start a Project</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__logo">STUDIO</div>
+          <p class="footer__copy">© 2026 Studio. All rights reserved.</p>
+        </div>
+        <div class="footer__links">
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
