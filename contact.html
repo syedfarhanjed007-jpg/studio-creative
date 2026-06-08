@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — STUDIO</title>
+  <meta name="description" content="Get in touch with Studio. Let's start your next project together.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: var(--space-xl);
+    }
+    .contact-info__item {
+      margin-bottom: var(--space-md);
+    }
+    .contact-info__label {
+      font-size: var(--fs-tiny);
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-text-light);
+      margin-bottom: 0.25rem;
+    }
+    .contact-info__value {
+      font-size: var(--fs-body);
+    }
+    .contact-info__value a {
+      border-bottom: 1px solid var(--color-bg-alt);
+      transition: border-color 0.3s ease;
+    }
+    .contact-info__value a:hover {
+      border-color: var(--color-secondary);
+    }
+    .map-placeholder {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background-color: var(--color-bg-alt);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: var(--space-lg);
+    }
+    .social-links {
+      display: flex;
+      gap: var(--space-md);
+      margin-top: var(--space-md);
+    }
+    .social-links a {
+      font-size: var(--fs-small);
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+    .social-links a:hover {
+      border-bottom-color: var(--color-secondary);
+    }
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">STUDIO</a>
+        <div class="nav__links">
+          <a href="work.html" class="nav__link">Work</a>
+          <a href="services.html" class="nav__link">Services</a>
+          <a href="about.html" class="nav__link">About</a>
+          <a href="contact.html" class="nav__link active">Contact</a>
+        </div>
+        <button class="nav__toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile">
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="section" style="padding-top: 10rem;">
+    <div class="container">
+      <p class="label reveal" style="margin-bottom: var(--space-sm);">Contact</p>
+      <h1 class="heading-1 reveal" style="margin-bottom: var(--space-md);">Let's Talk</h1>
+      <p class="text-large text-light reveal" style="max-width: 600px;">
+        Have a project in mind? We'd love to hear about it. Reach out and let's explore how we can work together.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Info -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Form -->
+        <div class="reveal">
+          <form class="contact-form">
+            <div class="form__group">
+              <label class="form__label" for="name">Name</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">Email</label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="service">Service</label>
+              <select class="form__select" id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="brand">Brand Identity</option>
+                <option value="web">Web Design</option>
+                <option value="motion">Motion Design</option>
+                <option value="strategy">Strategy</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="budget">Budget Range</label>
+              <select class="form__select" id="budget" name="budget">
+                <option value="">Select a range</option>
+                <option value="10-25">$10k — $25k</option>
+                <option value="25-50">$25k — $50k</option>
+                <option value="50-100">$50k — $100k</option>
+                <option value="100+">$100k+</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">Message</label>
+              <textarea class="form__textarea" id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="reveal" style="padding-left: var(--space-lg);">
+          <div class="contact-info__item">
+            <p class="contact-info__label">Email</p>
+            <p class="contact-info__value"><a href="mailto:hello@studio.agency">hello@studio.agency</a></p>
+          </div>
+          <div class="contact-info__item">
+            <p class="contact-info__label">Phone</p>
+            <p class="contact-info__value"><a href="tel:+12125551234">+1 (212) 555-1234</a></p>
+          </div>
+          <div class="contact-info__item">
+            <p class="contact-info__label">Address</p>
+            <p class="contact-info__value">
+              123 Design Street<br>
+              New York, NY 10001<br>
+              United States
+            </p>
+          </div>
+          <div class="contact-info__item">
+            <p class="contact-info__label">Hours</p>
+            <p class="contact-info__value">
+              Monday — Friday<br>
+              9:00 AM — 6:00 PM EST
+            </p>
+          </div>
+
+          <div class="contact-info__item">
+            <p class="contact-info__label">Follow</p>
+            <div class="social-links">
+              <a href="#">Instagram</a>
+              <a href="#">Dribbble</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">Twitter</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Map -->
+      <div class="map-placeholder reveal">
+        <p class="text-light">Map — 123 Design Street, New York</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__logo">STUDIO</div>
+          <p class="footer__copy">© 2026 Studio. All rights reserved.</p>
+        </div>
+        <div class="footer__links">
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
