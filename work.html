@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — STUDIO</title>
+  <meta name="description" content="Explore our portfolio of brand identity, web design, and motion design projects.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">STUDIO</a>
+        <div class="nav__links">
+          <a href="work.html" class="nav__link active">Work</a>
+          <a href="services.html" class="nav__link">Services</a>
+          <a href="about.html" class="nav__link">About</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+        </div>
+        <button class="nav__toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile">
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="section" style="padding-top: 10rem;">
+    <div class="container">
+      <p class="label reveal" style="margin-bottom: var(--space-sm);">Portfolio</p>
+      <h1 class="heading-1 reveal" style="margin-bottom: var(--space-md);">Our Work</h1>
+      <p class="text-large text-light reveal" style="max-width: 600px;">
+        A curated selection of projects that define who we are and how we think.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter + Projects -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="filter reveal">
+        <button class="filter__btn active" data-filter="all">All</button>
+        <button class="filter__btn" data-filter="brand">Brand</button>
+        <button class="filter__btn" data-filter="web">Web</button>
+        <button class="filter__btn" data-filter="motion">Motion</button>
+      </div>
+
+      <div class="grid grid--2">
+        <a href="#" class="card reveal" data-category="brand" data-modal-open="1" data-title="Meridian" data-category="Brand Identity" data-desc="Complete brand overhaul for a fintech startup, including logo, visual system, and guidelines. A comprehensive identity that bridges trust with innovation.">
+          <div class="card__image bg-color-1" style="display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 2rem; font-weight: 300; color: var(--color-text-light); opacity: 0.5;">01</span>
+          </div>
+          <div class="card__content">
+            <h3 class="heading-3">Meridian</h3>
+            <p class="text-light">Brand Identity</p>
+          </div>
+        </a>
+
+        <a href="#" class="card reveal" data-category="web" data-modal-open="2" data-title="Verge Studio" data-category="Web Design" data-desc="An immersive web experience for an architecture firm. Custom CMS, responsive design, and subtle animations that mirror their design philosophy.">
+          <div class="card__image bg-color-2" style="display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 2rem; font-weight: 300; color: var(--color-text-light); opacity: 0.5;">02</span>
+          </div>
+          <div class="card__content">
+            <h3 class="heading-3">Verge Studio</h3>
+            <p class="text-light">Web Design</p>
+          </div>
+        </a>
+
+        <a href="#" class="card reveal" data-category="motion" data-modal-open="3" data-title="Luminary" data-category="Motion Design" data-desc="Product launch animation series for a tech brand. 3D renders, kinetic typography, and seamless transitions across all digital touchpoints.">
+          <div class="card__image bg-color-3" style="display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 2rem; font-weight: 300; color: var(--color-text-light); opacity: 0.5;">03</span>
+          </div>
+          <div class="card__content">
+            <h3 class="heading-3">Luminary</h3>
+            <p class="text-light">Motion Design</p>
+          </div>
+        </a>
+
+        <a href="#" class="card reveal" data-category="brand" data-modal-open="4" data-title="Arbor" data-category="Brand Identity" data-desc="Brand identity for a sustainable furniture company. Earthy palette, organic typography, and a mark that speaks to craftsmanship and nature.">
+          <div class="card__image bg-color-4" style="display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 2rem; font-weight: 300; color: var(--color-text-light); opacity: 0.5;">04</span>
+          </div>
+          <div class="card__content">
+            <h3 class="heading-3">Arbor</h3>
+            <p class="text-light">Brand Identity</p>
+          </div>
+        </a>
+
+        <a href="#" class="card reveal" data-category="web" data-modal-open="5" data-title="Noctis" data-category="Web Design" data-desc="E-commerce platform for a luxury watch brand. Minimal design with rich interactions, 360° product views, and an editorial-style shopping experience.">
+          <div class="card__image bg-color-5" style="display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 2rem; font-weight: 300; color: var(--color-text-light); opacity: 0.5;">05</span>
+          </div>
+          <div class="card__content">
+            <h3 class="heading-3">Noctis</h3>
+            <p class="text-light">Web Design</p>
+          </div>
+        </a>
+
+        <a href="#" class="card reveal" data-category="motion" data-modal-open="6" data-title="Flux" data-category="Motion Design" data-desc="Title sequence and motion system for a streaming platform original. Bold typography, fluid transitions, and a color language that evolves with each episode.">
+          <div class="card__image bg-color-6" style="display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 2rem; font-weight: 300; color: var(--color-text-light); opacity: 0.5;">06</span>
+          </div>
+          <div class="card__content">
+            <h3 class="heading-3">Flux</h3>
+            <p class="text-light">Motion Design</p>
+          </div>
+        </a>
+
+        <a href="#" class="card reveal" data-category="brand" data-modal-open="7" data-title="Solara" data-category="Brand Identity" data-desc="Visual identity for a wellness retreat. Soft geometry, a sun-inspired mark, and a system designed to evoke calm across every touchpoint.">
+          <div class="card__image bg-color-7" style="display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 2rem; font-weight: 300; color: var(--color-text-light); opacity: 0.5;">07</span>
+          </div>
+          <div class="card__content">
+            <h3 class="heading-3">Solara</h3>
+            <p class="text-light">Brand Identity</p>
+          </div>
+        </a>
+
+        <a href="#" class="card reveal" data-category="web" data-modal-open="8" data-title="Prism" data-category="Web Design" data-desc="Portfolio website for a photography collective. Grid-based layout with immersive lightbox galleries and fluid page transitions.">
+          <div class="card__image bg-color-8" style="display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 2rem; font-weight: 300; color: var(--color-text-light); opacity: 0.5;">08</span>
+          </div>
+          <div class="card__content">
+            <h3 class="heading-3">Prism</h3>
+            <p class="text-light">Web Design</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--alt">
+    <div class="container" style="text-align: center;">
+      <p class="label reveal" style="margin-bottom: var(--space-sm);">Start a Project</p>
+      <h2 class="heading-1 reveal" style="margin-bottom: var(--space-md);">Let's create something.</h2>
+      <a href="contact.html" class="btn btn--primary reveal">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal">
+    <div class="modal__content">
+      <button class="modal__close">×</button>
+      <p class="label modal__cat" style="margin-bottom: var(--space-sm);"></p>
+      <h2 class="heading-2 modal__title" style="margin-bottom: var(--space-md);"></h2>
+      <p class="text-large text-light modal__desc"></p>
+      <div class="divider"></div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-md);">
+        <div>
+          <p class="label" style="margin-bottom: 0.25rem;">Year</p>
+          <p>2026</p>
+        </div>
+        <div>
+          <p class="label" style="margin-bottom: 0.25rem;">Duration</p>
+          <p>8 Weeks</p>
+        </div>
+        <div>
+          <p class="label" style="margin-bottom: 0.25rem;">Role</p>
+          <p>Full Creative</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__logo">STUDIO</div>
+          <p class="footer__copy">© 2026 Studio. All rights reserved.</p>
+        </div>
+        <div class="footer__links">
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
