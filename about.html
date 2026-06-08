@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — STUDIO</title>
+  <meta name="description" content="Learn about Studio — our story, team, values, and approach to creative work.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .team-card__avatar {
+      aspect-ratio: 1;
+      width: 100%;
+      border-radius: var(--radius);
+      margin-bottom: var(--space-sm);
+    }
+    .value {
+      padding: var(--space-md) 0;
+      border-bottom: 1px solid var(--color-bg-alt);
+    }
+    .value:last-child {
+      border-bottom: none;
+    }
+    .value__number {
+      font-size: var(--fs-tiny);
+      font-weight: 700;
+      color: var(--color-secondary);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.25rem;
+    }
+    .awards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-md);
+    }
+    .award {
+      padding: var(--space-md);
+      border: 1px solid var(--color-bg-alt);
+      border-radius: var(--radius);
+    }
+    @media (max-width: 768px) {
+      .awards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">STUDIO</a>
+        <div class="nav__links">
+          <a href="work.html" class="nav__link">Work</a>
+          <a href="services.html" class="nav__link">Services</a>
+          <a href="about.html" class="nav__link active">About</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+        </div>
+        <button class="nav__toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__mobile">
+    <a href="work.html">Work</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="section" style="padding-top: 10rem;">
+    <div class="container">
+      <p class="label reveal" style="margin-bottom: var(--space-sm);">About Us</p>
+      <h1 class="heading-1 reveal" style="margin-bottom: var(--space-md);">The Studio Story</h1>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container" style="max-width: 800px;">
+      <p class="text-large reveal" style="margin-bottom: var(--space-md);">
+        Studio was founded in 2018 with a simple belief: great design should feel effortless. We are a collective of designers, strategists, and thinkers who share a passion for creating meaningful brand experiences.
+      </p>
+      <p class="text-large text-light reveal" style="margin-bottom: var(--space-md);">
+        Based in New York, we work with ambitious brands worldwide — from emerging startups to established enterprises. Our approach is rooted in strategy, driven by craft, and measured by impact.
+      </p>
+      <p class="text-large text-light reveal">
+        We keep things small by design. Every project gets our full attention, and every client works directly with the people doing the work. No layers, no handoffs — just focused collaboration from start to finish.
+      </p>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section section--alt">
+    <div class="container">
+      <p class="label reveal" style="margin-bottom: var(--space-lg);">The Team</p>
+      <div class="grid grid--3">
+        <div class="reveal">
+          <div class="team-card__avatar team-color-1"></div>
+          <h3 class="heading-3" style="margin-bottom: 0.25rem;">Alex Rivera</h3>
+          <p class="text-light">Founder & Creative Director</p>
+        </div>
+        <div class="reveal">
+          <div class="team-card__avatar team-color-2"></div>
+          <h3 class="heading-3" style="margin-bottom: 0.25rem;">Maya Chen</h3>
+          <p class="text-light">Design Lead</p>
+        </div>
+        <div class="reveal">
+          <div class="team-card__avatar team-color-3"></div>
+          <h3 class="heading-3" style="margin-bottom: 0.25rem;">Jordan Park</h3>
+          <p class="text-light">Strategy Director</p>
+        </div>
+        <div class="reveal">
+          <div class="team-card__avatar team-color-4"></div>
+          <h3 class="heading-3" style="margin-bottom: 0.25rem;">Sam Okafor</h3>
+          <p class="text-light">Motion Designer</p>
+        </div>
+        <div class="reveal">
+          <div class="team-card__avatar team-color-5"></div>
+          <h3 class="heading-3" style="margin-bottom: 0.25rem;">Elena Volkov</h3>
+          <p class="text-light">Web Developer</p>
+        </div>
+        <div class="reveal">
+          <div class="team-card__avatar team-color-6"></div>
+          <h3 class="heading-3" style="margin-bottom: 0.25rem;">Kai Tanaka</h3>
+          <p class="text-light">Brand Designer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section">
+    <div class="container" style="max-width: 800px;">
+      <p class="label reveal" style="margin-bottom: var(--space-lg);">Our Approach</p>
+
+      <div class="value reveal">
+        <p class="value__number">01</p>
+        <h3 class="heading-3" style="margin-bottom: 0.5rem;">Simplicity First</h3>
+        <p class="text-light">We strip away the unnecessary to find the essential. The best solutions are often the simplest ones.</p>
+      </div>
+
+      <div class="value reveal">
+        <p class="value__number">02</p>
+        <h3 class="heading-3" style="margin-bottom: 0.5rem;">Strategy Driven</h3>
+        <p class="text-light">Every design decision is grounded in research and strategic thinking. Beauty without purpose is decoration.</p>
+      </div>
+
+      <div class="value reveal">
+        <p class="value__number">03</p>
+        <h3 class="heading-3" style="margin-bottom: 0.5rem;">Craft Obsessed</h3>
+        <p class="text-light">We sweat the details. The difference between good and great lives in the pixels, the kerning, the timing.</p>
+      </div>
+
+      <div class="value reveal">
+        <p class="value__number">04</p>
+        <h3 class="heading-3" style="margin-bottom: 0.5rem;">Collaborative</h3>
+        <p class="text-light">The best work comes from genuine partnership. We listen, challenge, and create together with our clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section class="section section--alt">
+    <div class="container">
+      <p class="label reveal" style="margin-bottom: var(--space-lg);">Recognition</p>
+      <div class="awards-grid">
+        <div class="award reveal">
+          <p class="label" style="margin-bottom: 0.25rem;">2025</p>
+          <h4 style="margin-bottom: 0.25rem;">Awwwards Site of the Day</h4>
+          <p class="text-light">Verge Studio Website</p>
+        </div>
+        <div class="award reveal">
+          <p class="label" style="margin-bottom: 0.25rem;">2025</p>
+          <h4 style="margin-bottom: 0.25rem;">CSS Design Awards</h4>
+          <p class="text-light">Best UI Design — Noctis</p>
+        </div>
+        <div class="award reveal">
+          <p class="label" style="margin-bottom: 0.25rem;">2024</p>
+          <h4 style="margin-bottom: 0.25rem;">Brand New Notable</h4>
+          <p class="text-light">Meridian Rebrand</p>
+        </div>
+        <div class="award reveal">
+          <p class="label" style="margin-bottom: 0.25rem;">2024</p>
+          <h4 style="margin-bottom: 0.25rem;">Motion Awards</h4>
+          <p class="text-light">Best Product Launch — Luminary</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container" style="text-align: center;">
+      <p class="label reveal" style="margin-bottom: var(--space-sm);">Join Us</p>
+      <h2 class="heading-1 reveal" style="margin-bottom: var(--space-md);">Want to work together?</h2>
+      <a href="contact.html" class="btn btn--primary reveal">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__logo">STUDIO</div>
+          <p class="footer__copy">© 2026 Studio. All rights reserved.</p>
+        </div>
+        <div class="footer__links">
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
